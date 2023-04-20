@@ -3,13 +3,13 @@
 
 ## 一. 开发环境
 - 开发环境网站：https://hinterlandsaupartnerdemo.connectedcommunity.org/home  
-  登录账号：margot.potts@hinterlands.com.au / dEfault&123
+  登录账号：找allen要
   如果不知道自己负责的模块在哪，可以询问allen。
 - 客户的production站：https://community.teachforaustralia.org/home  
-  登录账号：margot.potts@hinterlands.com.au / lOndOn228*
+  登录账号：找allen要
   当确定自己的代码没问题后，可以把 `/public/css/main.min.css` 代码复制到客户站的CSS页面，并测试是否与开发站一致。
 - 设计图链接：https://projects.invisionapp.com/d/main#/projects/prototypes/22264661?scrollOffset=642  
-  登录账号：peter.lu@hinterlands.com.au / ps52ag6p
+  登录账号：找allen要
 
 ## 二. 如何部署CSS
 1. 在根目录下运行 docker-compose up (取消运行为docker-compose down), 在scss文件保存内容后会在publick下生成css文件，复制 `/public/css/main.min.css` 的内容。
