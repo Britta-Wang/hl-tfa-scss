@@ -12,7 +12,7 @@
   登录账号：peter.lu@hinterlands.com.au / ps52ag6p
 
 ## 二. 如何部署CSS
-1. 复制 `/public/css/main.min.css` 的内容。
+1. 在根目录下运行 docker-compose up (取消运行为docker-compose down), 在scss文件保存内容后会在publick下生成css文件，复制 `/public/css/main.min.css` 的内容。
 2. 在开发环境的导航栏中点击 `/Site options/themes/`，选择 `Site Theme` -> `Edit`。
 3. 在 `Override CSS` 中，删除所有的CSS，并粘贴自己的CSS。
 > 注意：多人开发可能同时有人在覆盖CSS，可以右键检查/元素，找到前面的覆盖CSS的源代码，覆盖自己的CSS。如果不明白，可以看下开会的录制视频。
