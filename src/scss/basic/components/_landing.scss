@@ -1,0 +1,322 @@
+/****** landing controls ******/
+.HLLandingControl.SearchResults
+  ul
+  li
+  .row.title-row
+  .col-sm-3.col-md-3.pull-right {
+  display: none;
+}
+.HLLandingControl ul li .row.title-row .col-md-2,
+.blogs-block .row.title-row .col-md-1 {
+  width: 45px;
+  margin-right: 10px;
+  float: left;
+  padding: 0;
+}
+.HLLandingControl ul li .row.title-row .col-md-10,
+.HLLandingControl ul li .row.title-row .col-md-7,
+.blogs-block .row.title-row .col-md-11 {
+  width: calc(100% - 55px);
+  float: left;
+  padding: 0;
+}
+.home .col-md-8 .HLLandingControl ul li .row.title-row .col-md-7 {
+  width: 100%;
+}
+.HLLandingControl ul:not(.dropdown-menu) li {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 20px 0;
+}
+
+#MPOuterMost .HLLandingControl .ByLine,
+#MPOuterMost .HLLandingControl h5 {
+  color: #484848;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.HLLandingControl:not(.HLEngagement) .ByLine:not(:empty) + h5:not(:empty) {
+  padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #484848;
+}
+.col-md-4 .HLLandingControl .ByLine:not(:empty) {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: none;
+}
+.col-md-4 .HLLandingControl h5 {
+  display: none;
+}
+.HLLandingControl .no-data-container {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.ContentUserControl .HLLandingControl,
+.HLLandingControl .Content,
+.HLLandingControl .Content ul {
+  padding: 0;
+  border: none;
+}
+.HLLandingControl h2,
+.HLLandingControl .heading h2 {
+  margin: 0;
+}
+.home .col-md-4 .HLLandingControl ul li,
+.home .bg-gray .HLLandingControl ul li {
+  flex: 1;
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  position: relative;
+  color: #484848;
+  background: #fff;
+}
+.community-home .HLLandingControl.HLEventList ul li {
+  margin: 30px 0;
+}
+.HLLandingControl ol li,
+.HLLandingControl ul li {
+  margin-bottom: 0;
+}
+.HLLandingControl ol li:last-child,
+.HLLandingControl ul li:last-child {
+  margin-bottom: 20px;
+}
+.HLLandingControl .pull-right ul li {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/****** recent activity ******/
+.home .col-md-8 .HLLandingControl ul li,
+.community-home .HLLandingControl .has-profile-pic li {
+  padding-left: 55px;
+  position: relative;
+}
+.home .col-md-8 .HLLandingControl ul li .row.title-row,
+.HLLandingControl ul.has-profile-pic li .row.title-row {
+  position: relative;
+}
+.home .col-md-8 .HLLandingControl ul li .row.title-row .col-md-2,
+.HLLandingControl ul.has-profile-pic li .row.title-row .col-md-2 {
+  position: absolute;
+  top: 0;
+  left: -55px;
+}
+
+/****** unanswered posts ******/
+#sortOptionsContainer {
+  display: none;
+}
+.home .col-md-4 .HLDiscussions ul li p[id*="ContentPanel"] {
+  display: none;
+}
+.home .col-md-4 .HLDiscussions ul li {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  padding-bottom: 45px;
+}
+.home .col-md-4 .HLDiscussions a[id*="DiscussionList_More"] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+  background: #f7f7f7;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+/****** blogs ******/
+.home .HLRecentBlogs.HLLandingControl ul li {
+  padding-bottom: 45px;
+}
+.home .HLRecentBlogs .row.content-row > .col-md-12.no-pad {
+  position: static;
+}
+.home .HLRecentBlogs a[id*="BlogList_More"] {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #555;
+}
+.featured-section {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.featured-section .featured-img {
+  margin-top: 0;
+}
+.featured-img {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 33%;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(181, 181, 181, 0.5);
+}
+.featured-img .HtmlContent {
+  padding: 0;
+}
+.featured-img img {
+  width: 100%;
+}
+.featured-section ul {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(67% + 15px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px -15px -15px 0;
+}
+.home .bg-gray .HLLandingControl .featured-section ul li {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 30px);
+}
+
+/****** events ******/
+.HLEventList > .Content > .row > .col-md-12.no-pad > .pull-right {
+  float: none !important;
+  text-align: right;
+  padding-right: 15px;
+}
+.HLEventList > .Content > .row > .col-md-12.no-pad > br {
+  display: none;
+}
+.home .HLEventList .pull-right:not(:empty) {
+  margin-top: 10px;
+}
+.HLEventList ul li .col-md-2 {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+}
+.HLEventList ul li .col-md-10 {
+  width: 100%;
+}
+// .HLEventList ul li .row.title-row {
+//   width: calc(100% - 75px);
+// }
+.HLEventList .timeAgoFormat {
+  font-size: 14px;
+  line-height: 18px;
+  color: #484848;
+  margin-bottom: 10px;
+}
+.HLEventList .timeAgoFormat::before {
+  font-family: FontAwesome;
+  content: "\f017";
+  color: #828282;
+  margin-right: 5px;
+}
+.HLLandingControl.HLEventList .title-row img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* date blocks */
+.HLEventList .date-block {
+  width: 70px;
+  height: 65px;
+  border-radius: 4px;
+  position: relative;
+  float: right;
+}
+.HLEventList .calendar-day {
+  display: none;
+}
+.HLEventList .calendary-number {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.HLEventList .calendar-month {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+/****** most active members ******/
+.home .bg-gray {
+  background-color: #f2f2f2;
+  padding: 40px 15px;
+  border: none;
+}
+.home .bg-gray > div {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.home .HLEngagement ul.display-horizontal .slick-list {
+  width: 100%;
+}
+.home .HLEngagement ul.display-horizontal .slick-track {
+  display: flex;
+}
+.home .HLEngagement .points-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.home .HLLandingControl.HLEngagement .ByLine {
+  display: block;
+  margin-bottom: 0;
+}
+
+/*** arrows ***/
+.home .HLEngagement .slick-arrow {
+  height: 36px;
+  width: 36px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  border: none;
+  z-index: 20;
+}
+.home .HLEngagement .prev-arrow {
+  left: 0;
+  transform: translate(-150%, -50%);
+}
+.home .HLEngagement .next-arrow {
+  right: 0;
+  transform: translate(150%, -50%);
+}
+
+.home .col-md-4 .HLAnnouncements ul li {
+  margin-left: 0;
+  margin-right: 0;
+}

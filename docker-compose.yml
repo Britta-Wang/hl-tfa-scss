@@ -1,0 +1,38 @@
+version: '3'
+services:
+
+    web:
+      image: openresty/openresty
+      volumes:
+        - ${PWD}/etc/nginx/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+        - ${PWD}/etc/nginx/conf.d:/etc/nginx/conf.d
+        - ${PWD}/etc/nginx/ssl:/etc/nginx/ssl
+        - ${PWD}/etc/nginx/lang.lua:/etc/nginx/lang.lua
+        - ${PWD}/public:/var/www
+      restart: always
+      ports:
+        - "82:82"
+       #- "443:443"
+
+    sass.local:
+      depends_on:
+        - web
+      image: hinterlands/sass-server
+      ports:
+        - "8080-8082:8080-8082"
+        - "8088:8088"
+        - "3001:3001"
+      volumes:
+        - ${PWD}/public:/app/public/
+        - ${PWD}/src:/app/src/
+      entrypoint:
+        - gulp
+      command: ['--static']
+
+    #sendmail.local:
+      #image: node:alpine
+      #volumes:
+          #- ${PWD}/endpoints/sendmail:/app
+      #restart: always
+      #working_dir: /app
+      #command: [sh, -c, "npm install && npm start"]

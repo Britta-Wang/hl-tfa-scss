@@ -1,0 +1,43 @@
+/****** library page ******/
+.library-list > .col-md-2 {
+    width: 45px;
+    margin-right: 15px;
+    float: left;
+    padding-left: 0;
+}
+.library-list > .col-md-10 {
+    width: calc(100% - 60px);
+    float: left;
+    padding-right: 0;
+}
+.libListReptEntAttchLble {
+    border-bottom: 2px solid #f4f4f4;
+}
+div[id*="DocumentPanel"] .Content > .row > .col-md-4 {
+    padding-left: 0;
+}
+div[id*="DocumentPanel"] .Content > .row > .col-md-8 {
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+div[id*="DocumentPanel"] .btn-group .dropdown-toggle {
+    text-transform: none;
+    background: $form-bg;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid $form-border-color;
+    padding: 10px 30px 10px 12px;
+}
+div[id*="DocumentPanel"] .btn-group .dropdown-toggle .caret {
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+.library-list div[id*="PostedByPanel"] {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.library-list h3 span i.text-muted {
+    color: $blue-light;
+}   

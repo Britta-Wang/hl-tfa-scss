@@ -1,0 +1,35 @@
+.interior {
+    #MainCopy_ContentWrapper {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    #signatureClosedIcon,
+    #toggle-signature-btn {
+        vertical-align: middle;
+    }
+    .post-message-contributed-content {
+        .bootstrap-select.form-control {
+            background-color: transparent;
+        }
+        .panel-form.row {
+            >.col-md-12 {
+                >.row.form-group {
+                    @include media(large-and-down) {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    @include media(tablet-and-down) {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .panel.panel-form {
+            background-color: $white;
+        }
+    }
+}
+.panel.panel-form {
+    background-color: $white;
+}

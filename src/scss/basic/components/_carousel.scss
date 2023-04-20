@@ -1,0 +1,35 @@
+.main-carousel {
+    margin-bottom: 20px;
+    .carousel-inner {
+        > .item {
+            height: $carousel-height;
+            overflow: hidden;
+        }
+    }
+    .carousel-control {
+        &.left {
+            .glyphicon {
+                &:before {
+                  content: fa-content($fa-var-arrow-left);
+                }
+            }
+        }
+        &.right {
+            .glyphicon {
+                &:before {
+                  content: fa-content($fa-var-arrow-right);
+                }
+            }
+        }
+        .glyphicon {
+            &:before {
+              font-family: "Font Awesome 5 Pro";
+              font-weight: $font-weight-light;
+              font-size: 26px;
+              @include media(tablet-and-down) {
+                font-size: 20px;
+              }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+div[id*="FindContactsPanel"] .col-md-offset-2.col-md-10,
+div[id*="MessageTable"] .col-md-offset-2.col-md-10 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+div[id*="pnlFindContacts"]
+  div[id*="ucCountryStateProvinceList_updStateListPanel"] {
+  width: 100%;
+}
+.ContentUserControl {
+  .panel.form-horizontal {
+    &.panel-filter {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

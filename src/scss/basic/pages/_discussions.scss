@@ -1,0 +1,67 @@
+/****** discussions ******/
+#MPOuterMost .Container thead .Header td, 
+#MPOuterMost th, 
+#MPOuterMost .ListContainer .ListHeader, 
+#MPOuterMost .drItemSubHeader, 
+#MPOuterMost .table-thead-background tr th, 
+#MPOuterMost .table-thead-background tr td {
+    background-color: #f9f9f9;
+    color: #383A3B;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 16px;
+}
+div[id*="MessagePanel"] > .row-border-bottom {
+    border-bottom: none;
+}
+.table thead>tr>th {
+    border-bottom: none;
+    border-top: none;
+}
+table tbody > tr > td {
+    border-top: 2px solid #f4f4f4;
+}
+table tbody > tr:first-child > td {
+    border-top: none;
+}
+a[id*="MessageThreadSummary"] {
+    text-decoration: none;
+}
+
+div[id*="MessagePanel"] span[id*="ThreadFollowIcon"] i {
+    color: $blue-light;
+}
+
+.ContentUserControl {
+    .message-list-controls {
+        margin-bottom: $spacer-4;
+        .form-group {
+            margin-left: $spacer-2;
+            margin-bottom: $spacer-2;
+        }
+    }
+    .table-responsive {
+        .table-thead-background {
+            @include media(tablet-and-down) {
+                display: none;
+            }
+        }
+        tbody {
+            border-bottom: 1px solid #ccc;
+            .ListRow {
+                td {
+                    @include media(tablet-and-down) {
+                        text-align: left;
+                    }
+                }
+                .text-right {
+                    @include media(tablet-and-down) {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    } 
+}

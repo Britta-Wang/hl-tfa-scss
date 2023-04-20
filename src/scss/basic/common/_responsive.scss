@@ -1,0 +1,341 @@
+/****** responsiveness ******/
+@media (min-width: 1230px) {
+  .community-home .row-wide > div[class*="col-md-"]:first-child {
+    padding-left: 0;
+  }
+  .community-home .row-wide > div[class*="col-md-"]:last-child {
+    padding-right: 0;
+  }
+}
+@media (max-width: 1230px) {
+  .community-home .section1.col-md-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .commHTMLOptionsToAttach > .row > .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  // #BreadCrumb.BreadCrumb {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
+  .home .hero {
+    padding-left: 15px;
+  }
+  #PageTitleH1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #NAV {
+    right: 0;
+  }
+  .profile > .row:first-child > .col-md-4 {
+    padding: 15px;
+  }
+  #PageTitleH1::after {
+    left: 15px;
+  }
+  .community-members .dsItem > .row > .col-md-12,
+  .community-members .row-bottom-margin > .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .JoinLeaveLink a[id*="lbJoin"] {
+    right: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .community-members .panel-body .row-bottom-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+@media (min-width: 993px) {
+  .row-wide {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .row-wide div[class*="section"] {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  // .home .HLEventList {
+  //     padding-left: 0;
+  //     padding-right: 0;
+  // }
+}
+@media (max-width: 991px) {
+  #MPOuterFooter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .featured-section ul,
+//   .home .HLEventList ul,
+//   .home .HLEngagement ul,
+  #FOOTER > .row > .col-md-12 {
+    flex-wrap: wrap;
+  }
+  //   .home .bg-gray .HLLandingControl .featured-section ul li,
+  //   .home .HLLandingControl.HLEventList .Content > .row > .col-md-12 > ul li,
+  //   .home .HLEngagement ul.display-horizontal li {
+  //     flex-grow: 0;
+  //     flex-shrink: 1;
+  //     flex-basis: calc(100% - 30px);
+  //   }
+  #FOOTER > .row:first-child .ContentItemHtml {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  #FOOTER > .row:first-child {
+    margin-bottom: 0;
+  }
+  #NAV {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+  div[id*="CommunityFilter"] .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  div[id*="pnlFindContacts"] .form-group,
+  div[id*="MessageTable"].form-horizontal .form-group:first-child,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(2),
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(3),
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(4),
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) {
+    flex-basis: 100%;
+  }
+  div[id*="pnlFindContacts"] .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:first-child .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(2) .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(3) .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(4) .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) .col-md-2 {
+    width: 25%;
+    float: left;
+  }
+  div[id*="pnlFindContacts"] .col-md-10,
+  div[id*="MessageTable"].form-horizontal .form-group:first-child .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(2) .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(3) .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(4) .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) .col-md-5 {
+    width: 75%;
+    float: left;
+  }
+  .community-members select.form-control {
+    margin-bottom: 10px;
+  }
+  .community-members > .row > .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .summary-edit .Content {
+    flex-wrap: wrap;
+  }
+  .summary-edit .img-container,
+  .summary-edit .text-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    display: block;
+  }
+  .summary-edit .img-container img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .summary-edit .text-container {
+    padding-left: 0;
+  }
+  .summary-edit .img-container + .text-container {
+    padding-top: 20px;
+  }
+  div[id*="FindContactsPanel"] .col-md-offset-2.col-md-10,
+  div[id*="MessageTable"] .col-md-offset-2.col-md-10 {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .full .row-full div[class*="section"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .hero {
+    padding-right: 15px;
+  }
+  .featured-img {
+    display: none;
+  }
+  .featured-section ul {
+    flex-basis: 100%;
+  }
+  .home .bg-gray .HLLandingControl .featured-section ul li {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #MPOuterFooter {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .community-list {
+    flex-wrap: wrap;
+  }
+  .community-list > .col-md-7,
+  .community-list > .col-md-5 {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+  }
+  span[id*="imgIsMember"] {
+    float: left;
+  }
+  .community-list div[id*="pnlAttributes"] .pull-right,
+  .community-list div[id*="pnlEnterJoin"] .pull-right {
+    float: left !important;
+  }
+  .community-members .col-md-2.col-sm-4.col-xs-6.text-center {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .JoinLeaveLink a[id*="lbJoin"] {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+  }
+}
+@media (max-width: 767px) {
+  .search-bar-top {
+    display: none;
+  }
+  #NAV .navbar-nav {
+    float: none;
+    margin: 8px 0;
+  }
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .disabled > a {
+    padding: 10px 15px;
+  }
+  .dropdown-menu > li:not(:last-child) {
+    border-bottom: none;
+  }
+  .navbar-default .navbar-nav > li > a {
+    border-top: 1px solid $header-border-color;
+  }
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus {
+    border-color: $header-border-color;
+  }
+}
+@media (max-width: 550px) {
+  .HLLandingControl:not(.HLEngagement) .ByLine:not(:empty) {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+  }
+  .HLLandingControl h5 {
+    display: none;
+  }
+  #FOOTER > .row:first-child .ContentItemHtml {
+    flex-basis: 100%;
+  }
+  #MPFooter + .row,
+  #FOOTER #MPCopyright,
+  #FOOTER .attribution {
+    float: none;
+    text-align: left;
+  }
+  .HLLandingControl ul:not(.dropdown-menu) li {
+    padding: 15px 0;
+  }
+  .HLLandingControl ul li .row.title-row .col-md-2 {
+    width: 26px;
+  }
+  .HLLandingControl ul li .row.title-row .col-md-10,
+  .HLLandingControl ul li .row.title-row .col-md-7 {
+    width: calc(100% - 36px);
+  }
+  .home .col-md-8 .HLLandingControl ul li {
+    padding-left: 35px;
+  }
+  .home .col-md-8 .HLLandingControl ul li .row:not(.title-row) {
+    display: none;
+  }
+  h1,
+  .h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .home .hero {
+    padding-top: 50px;
+    padding-bottom: 165px;
+  }
+  .quick-link i {
+    font-size: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  .quick-link-container {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+    padding: 15px;
+  }
+  .footer-logo img {
+    max-height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .Welcome ul {
+    width: 300px;
+  }
+  a[id*="Welcome_Details_ProfileLink"] {
+    width: 40px;
+    height: 40px;
+  }
+  #ProfileContainer .panel-body > .row .col-md-9,
+  #ProfileContainer .panel-body > .row .welcome-links {
+    padding-left: 60px;
+  }
+  #ProfileContainer .panel-footer {
+    padding-left: 70px;
+  }
+  .rowContainer.community-list div.pull-right.margin-top-small a.btn {
+    width: auto;
+  }
+  div[id*="pnlFindContacts"] .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:first-child .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(2) .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(3) .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(4) .col-md-2,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) .col-md-2 {
+    width: 100%;
+    text-align: left;
+    float: none;
+  }
+  div[id*="pnlFindContacts"] .col-md-10,
+  div[id*="MessageTable"].form-horizontal .form-group:first-child .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(2) .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(3) .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(4) .col-md-5,
+  div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) .col-md-5 {
+    width: 100%;
+    float: none;
+  }
+  .community-members .col-md-2.col-sm-4.col-xs-6.text-center {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

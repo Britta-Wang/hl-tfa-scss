@@ -1,0 +1,50 @@
+div[id*="upEventList"] > .row-border-bottom,
+div[id*="upEventList"] > .row-border-bottom .row-border-bottom {
+  border: none;
+}
+.event-list {
+  padding: $module-padding;
+  background-color: $module-bg;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.event-list h2 {
+  margin: 0;
+}
+.event-list h3 a {
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.event-list-item {
+  margin-left: 0;
+  border-top: 2px solid #f4f4f4;
+  border-bottom: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+h2 + .event-list-item {
+  border-top: none;
+}
+.event-dates {
+  font-size: 16px;
+  line-height: 19px;
+}
+.event-dates .text-muted {
+  color: #484848;
+}
+.hltags ul.tagit input[type="text"] {
+  font-size: 14px;
+  line-height: 16px;
+}
+.glyphicon-tags::before {
+  font-family: FontAwesome;
+  content: "\f02b";
+}
+div#tblAdvanceSearch.panel {
+  @include media(tablet-and-down) {
+    padding: 25px 15px 10px;
+  }
+}

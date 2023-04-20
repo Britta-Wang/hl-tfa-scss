@@ -1,0 +1,29 @@
+/*!
+ * Font Awesome Pro 5.15.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@import "variables";
+
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-display: $fa-font-display;
+  src: url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/cMHZt9UToeWAPRe8NQ6B_fa-solid-900.eot");
+  src: url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/cMHZt9UToeWAPRe8NQ6B_fa-solid-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/EkkIsLy7SqmHyt3qRRIt_fa-solid-900.woff2")
+      format("woff2"),
+    url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/uThZ7qVuQOGiUYEf5Wwu_fa-solid-900.woff")
+      format("woff"),
+    url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/Jb4cUEvdRtYGx0KKKuXI_fa-solid-900.ttf")
+      format("truetype"),
+    url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/It3XHFcyQFiYpMzsSJwj_fa-solid-900.svg#fontawesome")
+      format("svg");
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}

@@ -1,0 +1,17 @@
+#MPOuterFooter {
+    background-color: $footer-layout-bg;
+    .MPBottomMenu {
+        margin-bottom: 0;
+        padding: 18px 0;
+        ul {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        color: $footer-color;
+        font-size: $footer-size;
+    }
+}
+#MPFooterLink {
+    display: none;
+}

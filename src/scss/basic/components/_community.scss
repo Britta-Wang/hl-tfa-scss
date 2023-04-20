@@ -1,0 +1,63 @@
+/****** community homepage ******/
+.HLLandingControl .no-data-container {
+    margin-top: 20px;
+}
+.summary-edit {
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    padding: 20px;
+}
+.summary-edit .Content {
+    display: flex;
+}
+.summary-edit .img-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 33%;
+}
+.summary-edit .text-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 67%;
+    padding-left: 20px;
+}
+.summary-edit .img-container,
+.summary-edit .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.summary-edit h1,
+.summary-edit h2,
+.summary-edit h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.summary-edit h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.summary-edit .JoinLeaveLink a[id*="lbJoin"] {
+    padding: 9px 12px;
+}
+.JoinLeaveLink a[id*="lbJoin"] {
+    position: absolute;
+    top: 50%;
+    right: calc(50% - 585px);
+    transform: translateY(-50%);
+}
+.community-list {
+    >.col-md-7.col-md-7 {
+        @include media(phone-and-down) {
+            flex-basis: 100%;
+        }
+    }
+    >.col-md-5.col-md-5 {
+        @include media(phone-and-down) {
+            flex-basis: 100%;
+        }
+    }
+    @include media(desktop-and-down) {
+        flex-direction: column;
+    }
+}

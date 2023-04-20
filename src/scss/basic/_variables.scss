@@ -1,0 +1,339 @@
+//
+// Variables
+// --------------------------------------------------
+// icomoon
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default; // #222
+$gray-dark: lighten($gray-base, 20%) !default; // #333
+$gray: lighten($gray-base, 33.5%) !default; // #555
+$gray-light: lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
+
+$white: #fff !default;
+$gray-50: #fafafa !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #eeeeee !default;
+$gray-300: #0c0b0b !default;
+$gray-400: #d8d8d8 !default;
+$gray-500: #9e9e9e !default;
+$gray-600: #757575 !default;
+$gray-700: #616161 !default;
+$gray-800: #3b3b3b !default;
+$gray-900: #1e1e1e !default;
+$black: #000 !default;
+$gray-border: #ccc;
+
+$brand-primary: #041e42 !default;
+$brand-primary-hover: #062f6d !default;
+$brand-secondary: #005EB9 !default;
+$brand-secondary-hover: #0051A0 !default;
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+
+$purple: #87189d !default;
+$purple-light: #9b1bb4 !default;
+$blue-darker: #041e42 !default;
+$blue-dark: #005eb8 !default;
+$blue-light: #005EB9 !default;
+$navy: #0033cc !default;
+$cyan: #00adef !default;
+$cyan-light: #00b7ff !default;
+$red: #ff0000 !default;
+
+$warm-gray: #d7d2cb !default;
+$gray: #dfdbd5 !default;
+$light-gray: #ebe9e5 !default;
+$dark-gray: #333f48 !default;
+$light-grey-highlight: #f5f4f2 !default;
+
+$body-color: $dark-gray !default;
+$text-muted: $gray-600 !default;
+$link-color: $brand-primary !default;
+$body-bg: $light-grey-highlight !default;
+$body-font-size: 14px !default;
+$body-line-height: 1.71428571 !default;
+$body-font-weight: 400 !default;
+
+$low-shadows: 0 2px 4px 0 rgba(4, 30, 66, 0.25) !default;
+$high-shadows: 0 2px 4px 0 rgba(4, 30, 66, 0.15) !default;
+
+// Spacing
+$spacer: 16px !default;
+
+$spacer-0: 0 !default; // 0px
+$spacer-1: ($spacer * 0.25) !default; // 4px
+$spacer-2: ($spacer * 0.5) !default; // 8px
+$spacer-3: ($spacer * 0.75) !default; // 12px
+$spacer-4: ($spacer * 1) !default; // 16px
+$spacer-5: ($spacer * 1.5) !default; // 24px
+$spacer-6: ($spacer * 1.75) !default; // 28px
+$spacer-7: ($spacer * 2) !default; // 32px
+$spacer-8: ($spacer * 2.25) !default; // 36px
+$spacer-9: ($spacer * 2.5) !default; // 40px
+
+$spacer-10: ($spacer * 4) !default; // 64px
+$spacer-11: ($spacer * 5) !default; // 80px
+$spacer-12: ($spacer * 6) !default; // 96px
+$spacer-13: ($spacer * 7) !default; // 112px
+$spacer-14: ($spacer * 8) !default; // 128px
+$spacer-15: ($spacer * 9) !default; // 144px
+$spacer-16: ($spacer * 10) !default; // 160px
+$spacer-17: ($spacer * 11) !default; // 176px
+$spacer-18: ($spacer * 12) !default; // 192px
+$spacer-19: ($spacer * 13) !default; // 208px
+
+// Module
+$module-bg: $white;
+$module-padding: 20px;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+//** Global text color on `<body>`.
+$text-color: $gray-dark !default;
+
+//** Global textual link color.
+$link-color: $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-decoration: inherit !default;
+$link-hover-decoration: underline !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"  !default;
+$font-family-base: $font-family-sans-serif  !default;
+
+$font-size-base: 14px !default; // Assumes the browser default, typically `16px`
+$font-size-xs: ($font-size-base * (10 / $font-size-base)) + px !default;
+
+$font-size-sm: ($font-size-base * (12 / $font-size-base)) + px !default;
+
+$font-size-md: ($font-size-base * (14 / $font-size-base)) + px !default;
+
+$font-size-lg: ($font-size-base * (16 / $font-size-base)) + px !default;
+
+$font-size-xlg: ($font-size-base * (18 / $font-size-base)) + px !default;
+
+$font-size-xxlg: ($font-size-base * (20 / $font-size-base)) + px !default;
+
+$font-size-xxxlg: ($font-size-base * (24 / $font-size-base)) + px !default;
+
+$font-size-xxxxlg: ($font-size-base * (30 / $font-size-base)) + px !default;
+
+$font-size-h1: 30px !default;
+$font-size-h2: 24px !default;
+$font-size-h3: 20px !default;
+$font-size-h4: 18px !default;
+$font-size-h5: 16px !default;
+$font-size-h6: 14px !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-normal !default;
+
+$line-height-h1: 41px !default;
+$line-height-h2: 33px !default;
+$line-height-h3: 24px !default;
+$line-height-h4: 24px !default;
+$line-height-h5: 22px !default;
+$line-height-h6: 24px !default;
+//line-height
+$line-height-xxxl: 1.3333333333 !default;
+$line-height-xxl: 1.3333333333 !default;
+$line-height-xl: 1.3333333333 !default;
+$line-height-large: 1.3333333333 !default;
+
+$line-height-medium: 1.5 !default;
+$line-height-small: 1.5 !default;
+$line-height-base: 1.7142857143 !default;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical: 6px !default;
+$padding-base-horizontal: 12px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+$line-height-large: 1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small: 1.5 !default;
+
+$border-radius-base: 3px !default;
+$border-radius-large: 6px !default;
+$border-radius-small: 3px !default;
+$border-radius-round: 50% !default;
+
+// pagination
+$pagination-radius: 0 !default;
+$pagination-bg: transparent !default;
+$pagination-border: transparent !default;
+$pagination-bg-hover: transparent !default;
+$pagination-border-hover: transparent !default;
+$pagination-disabled: transparent !default;
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+// footer start
+$footer-layout-bg: $brand-primary !default;
+$footer-color: #fff !default;
+$footer-size: $font-size-base !default;
+$footer-border-color: #fff !default;
+// footer end
+
+// carousel start
+$carousel-height: 400px !default;
+// carousel end
+
+// form control start
+$form-border-color: $warm-gray !default;
+$form-bg: #fff !default;
+$form-color: $body-color !default;
+$form-font-size: $font-size-md !default;
+$form-space: '6px 12px' !default;
+$form-radius: border-radius-base !default;
+$form-select-height: 40px !default;
+$form-input-height: 36px !default;
+// form control end
+
+// header start
+$header-layout-bg: #fff !default;
+$header-search-height: 36px !default;
+$header-profile-container-image-size: 60px !default;
+$header-border-color: #f0f0f0 !default;
+$nav-layout-bg: $light-gray !default;
+$nav-bar-bg: transparent !default;
+$nav-active-bg: $gray-400 !default;
+$nav-submenu-active-bg: $gray-400 !default;
+$nav-font-color: $body-color !default;
+$nav-active-font-color: $body-color !default;
+// header end
+
+// blog list start
+$blog-heading-font-size: 24px !default;
+$blog-heading-font-color: $brand-primary !default;
+$blog-heading-font-weight: 700 !default;
+$blog-heading-line-height: 33px !default;
+
+// blog list end
+
+// buttons
+$btn-font-size: 16px !default;
+$btn-font-weight: $font-weight-semibold !default;
+$btn-border-radius: $border-radius-base !default;
+$btn-line-height: 22px !default;
+$btn-boxshadow: 0px 1px 4px rgba(4, 30, 66, 0.25) !default;
+
+$btn-primary-bg-color: $brand-primary !default;
+$btn-primary-bg-color-hover: $brand-primary-hover !default;
+$btn-primary-border-color: $brand-primary !default;
+$btn-primary-color: $white !default;
+
+$btn-secondary-bg-color: $brand-secondary !default;
+$btn-secondary-bg-color-hover: $brand-secondary-hover !default;
+$btn-primary-border-color: $brand-secondary !default;
+$btn-secondary-color: $white !default;
+
+
+$zindex-navbar: 1000 !default;
+$zindex-dropdown: 1000 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+$zindex-navbar-fixed: 1030 !default;
+$zindex-modal-background: 1040 !default;
+$zindex-modal: 1050 !default;
+
+//screen
+$screen-full: 1200px !default;
+$screen-wide: 1170px !default;
+
+$screen-tiny: 360px !default;
+$screen-xs: 480px !default; //480
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+$screen-xlg: 1600px !default;
+$screen-xxlg: 1900px !default;
+
+$screen-tiny-min: $screen-tiny !default; //360
+$screen-xs-min: $screen-xs !default; //480
+$screen-sm-min: $screen-sm !default; // 768
+$screen-md-min: $screen-md !default; // 992
+$screen-lg-min: $screen-lg !default; // 1200
+$screen-xlg-min: $screen-xlg !default; // 1600
+$screen-xxlg-min: $screen-xxlg !default; // 1900
+
+$screen-little-max: ($screen-tiny-min - 1) !default; //359
+$screen-tiny-max: ($screen-xs-min - 1) !default; //479
+$screen-xs-max: ($screen-sm-min - 1) !default; //767
+$screen-sm-max: ($screen-md-min - 1) !default; //991
+$screen-md-max: ($screen-lg-min - 1) !default; //1199
+$screen-lg-max: ($screen-xlg-min - 1) !default; //1599
+$screen-xlg-max: ($screen-xxlg-min - 1) !default; //1899
+
+//height
+$screen-xlg-min-h: 769px  !default;
+$screen-xxlg-min-h: 1081px !default;
+$screen-xxxlg-min-h: 1441px !default;
+
+//breakpoints
+$breakpoints: (
+  tiny-and-down: "(max-width: #{$screen-little-max})",
+  phone-and-down: "(max-width: #{$screen-tiny-max})",
+  tablet-and-down: "(max-width: #{$screen-xs-max})",
+  desktop-and-down: "(max-width: #{$screen-sm-max})",
+  large-and-down: "(max-width: #{$screen-md-max})",
+  xlarge-and-down: "(max-width: #{$screen-lg-max})",
+  xxlarge-and-down: "(max-width: #{$screen-xlg-max})",
+  tiny-to-phone:
+    "(min-width: #{$screen-tiny-min}) and (max-width: #{$screen-tiny-max})",
+  phone-to-tablet:
+    "(min-width: #{$screen-xs-min}) and (max-width: #{$screen-xs-max})",
+  tablet-to-desktop:
+    "(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})",
+  desktop-to-large:
+    "(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})",
+  large-to-xlarge:
+    "(min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max})",
+  xlarge-to-xxlarge:
+    "(min-width: #{$screen-xlg-min}) and (max-width: #{$screen-xlg-max})",
+  phone-and-up: "(min-width: #{$screen-xs-min})",
+  tablet-and-up: "(min-width: #{$screen-sm-min})",
+  desktop-and-up: "(min-width: #{$screen-md-min})",
+  large-and-up: "(min-width: #{$screen-lg-min})",
+  xlarge-and-up: "(min-width: #{$screen-xlg-min})",
+  xxlarge-and-up: "(min-width: #{$screen-xxlg-min})",
+  //height
+  xlarge-and-up-h: "(min-height: #{$screen-xlg-min-h})",
+  xxlarge-and-up-h: "(min-height: #{$screen-xxlg-min-h})",
+  xxxlarge-and-up-h: "(min-height: #{$screen-xxxlg-min-h})",
+);

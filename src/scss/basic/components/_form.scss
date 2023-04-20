@@ -1,0 +1,112 @@
+/*** forms ***/
+
+div[id*="pnlFindContacts"] .contacts-flex-wrapper,
+div[id*="MessageTable"].form-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+div[id*="pnlFindContacts"] > div:not(.form-group) {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+div[id*="MessageTable"].form-horizontal .form-group {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+div[id*="pnlFindContacts"] .form-group,
+div[id*="MessageTable"].form-horizontal .form-group:first-child,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(2),
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(3),
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(4),
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) {
+    flex-basis: 50%;
+    margin-right: 0;
+    margin-left: 0;
+}
+div[id*="pnlFindContacts"] .col-md-2,
+div[id*="MessageTable"].form-horizontal .form-group:first-child .col-md-2,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(2) .col-md-2,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(3) .col-md-2,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(4) .col-md-2,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) .col-md-2 {
+    width: 30%;
+}
+div[id*="pnlFindContacts"] .col-md-10,
+div[id*="MessageTable"].form-horizontal .form-group:first-child .col-md-5,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(2) .col-md-5,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(3) .col-md-5,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(4) .col-md-5,
+div[id*="MessageTable"].form-horizontal .form-group:nth-child(5) .col-md-5 {
+    width: 70%;
+}
+div[id*="FindContactsPanel"] > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+div[id*="FindContactsPanel"] .col-md-offset-2.col-md-10,
+div[id*="MessageTable"] .col-md-offset-2.col-md-10 {
+    margin-left: 12.5%;
+    width: 87.5%;
+}
+div[id*="MessageTable"] .col-md-2 {
+    width: 12.5%;
+}
+div[id*="MessageTable"] .col-md-10 {
+    width: 87.5%;
+}
+.form-control {
+    height: $form-input-height;
+    border-color: $form-border-color;
+    background-color: $form-bg;
+    border-radius: $form-radius;
+    font-size: $form-font-size;
+    padding: $form-space;
+    color: $form-color;
+}
+
+/* styleguide end */
+/* select override*/
+select {
+    border: solid 1px $form-border-color;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/USCMwPj4TImOylEsNQVE_angle-down-light.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: calc(100% - 12px);
+    background-size: 10px;
+    padding-left: 12px;
+    padding-right: 30px;
+}
+select.form-control {
+    height: $form-select-height;
+    background-image: url("https://higherlogicdownload.s3.amazonaws.com/ASUM/37203bc9-9956-44bf-9f30-a23e046a3c5d/UploadedFiles/USCMwPj4TImOylEsNQVE_angle-down-light.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: calc(100% - 12px);
+    background-size: 10px;
+    padding-left: 12px;
+    padding-right: 30px;
+}
+.bootstrap-select.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: auto;
+    max-width: 100%;
+}
+
+.ContentUserControl {
+    .panel.form-horizontal {
+        .form-group {
+            padding-top: 15px;
+            @include media(tablet-and-down) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}

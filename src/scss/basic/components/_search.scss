@@ -1,0 +1,91 @@
+/* faceted search (search page) */
+.faceted-search-main .text-muted,
+.faceted-search-main .facets h2 {
+  color: #383a3b;
+}
+.faceted-search-main .facets,
+.faceted-search-main .meta-content {
+  font-size: 15px;
+  line-height: 18px;
+  color: #484848;
+}
+.faceted-search-main .facets .facet-container h4 {
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484848;
+}
+.faceted-search-main .fs-result-row h3 a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 23px;
+}
+.faceted-search-main .fs-result-row .match-block {
+  color: #484848;
+}
+.hl-type {
+  display: none;
+}
+.faceted-search-main .fs-result-row .owner-name {
+  font-size: 15px;
+  line-height: 18px;
+}
+.faceted-search-main .meta-block .owner-block {
+  width: 25%;
+  float: left;
+}
+.faceted-search-main .meta-block .owner-block + .owner-block {
+  width: 75%;
+  float: left;
+  margin-bottom: 5px;
+}
+.faceted-search-main .meta-block .owner-block + div[style*="clear"] {
+  display: none;
+}
+.faceted-search-main .fs-result-row .meta-content-date {
+  color: #484848;
+  font-size: 14px;
+  line-height: 16px;
+}
+.owner-block + .owner-block {
+  width: calc(100% - 60px);
+  float: left;
+  margin-bottom: 5px;
+}
+.faceted-search-main .fs-result-row .meta-content-date + .meta-content {
+  margin-top: 15px;
+}
+.faceted-search-main .fs-result-row .meta-block {
+  border-left: 2px solid #f4f4f4;
+}
+
+/* ideation search */
+.ideation-home label[for*="searchAhead"],
+.ideation-home label[for*="searchAhead"] + input {
+  background-color: #f7f8fa;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+.ideation-home label[for*="searchAhead"] {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+.ideation-home .input-group label[for*="searchAhead"] + input.form-control {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  color: #828282;
+  border-right: 1px solid #ddd;
+  box-shadow: none;
+}
+.ideation-home label[for*="searchAhead"] + input::placeholder {
+  font-style: normal;
+}
+.ideation-home
+  .input-group
+  label[for*="searchAhead"]
+  + input.form-control:focus {
+  outline: none;
+}

@@ -1,0 +1,83 @@
+.label {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-sm;
+  line-height: 14px;
+  padding: 3px 10px;
+}
+
+select.form-control {
+  border-color: #dbdbdb;
+  box-shadow: none;
+  font-size: $font-size-sm;
+  line-height: 16px;
+  color: $black;
+}
+div[id*="pnlAttributes"] {
+  .btn-community-stats-static {
+    text-transform: none;
+    color: #484848;
+    font-size: $font-size-sm;
+    line-height: 14px;
+    border-color: #f4f4f4 !important;
+    background: #fff;
+    border-radius: 2px;
+    border-width: 2px;
+    letter-spacing: 0;
+  }
+}
+.community-list,
+.community-list + .pagination {
+  border-top: 2px solid #e8e8e8;
+  border-bottom: none;
+  padding: 20px 0;
+  margin: 0;
+}
+.community-list {
+  display: flex;
+  > .col-md-5 {
+    padding-right: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 41.66666666667%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  > .col-md-7 {
+    padding-left: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 58.3333333333%;
+  }
+  p[id*="StatLastJoined"] span {
+    margin-left: -6px;
+    color: #484848;
+    font-size: $font-size-sm;
+    line-height: 18px;
+    @include media(tablet-and-down) {
+      margin-left: 0;
+    }
+  }
+}
+.community-list {
+  p[id*="StatLastJoined"] {
+    > span {
+      font-weight: $font-weight-semibold;
+      text-transform: capitalize;
+      background-color: #ebe9e5;
+    }
+    span {
+      margin-left: -6px;
+      color: #041e42;
+      font-size: $font-size-sm;
+      line-height: 18px;
+    }
+    > small > span {
+      font-style: italic;
+      color: rgba(51, 63, 72, 0.7);
+    }
+  }
+}
+span[id*="imgIsMember"] {
+  float: right;
+}

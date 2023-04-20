@@ -1,0 +1,14 @@
+.all-blogs-list {
+    >div {
+        font-size: $blog-heading-font-size;
+        font-weight: $blog-heading-font-weight;
+        line-height: $blog-heading-line-height;
+        color: $blog-heading-font-color;
+    }
+    >div >div {
+        font-size: $body-font-size;
+        font-weight: $body-font-weight;
+        line-height: $body-line-height;
+        color: $body-color;
+    }
+}
