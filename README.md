@@ -20,6 +20,9 @@
 ## 三. 开发注意点
 1. 每个人再自己名字的文件夹下写代码，路径为 `/src/scss/project/tfa/xxx`。
 2. 为自己负责的组件写上备注，例如负责 `header`、`footer` 组件。
+3. Update of all written TFA requirements;
+https://docs.google.com/document/d/1CtixR87NdhbiWUovKBEpTQKca6NWrTqacTAzDm0tRck/edit#
+这个链接是需要文档，基本都已经在设计图里面了，但是做个别模块得可以去看一下
 ```scss
 /*********** header start *****************/
 // code here
