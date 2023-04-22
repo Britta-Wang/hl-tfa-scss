@@ -3,15 +3,18 @@ h2,
 .h2 {
   color: $brand-primary;
 }
+
 h2 span::after,
 .panel-title span::after {
   border-bottom-color: $brand-primary;
 }
+
 h3,
 .h3,
 .HLLandingControl h3 a {
   color: $brand-primary;
 }
+
 h4,
 .h4 {
   color: $brand-primary;
@@ -22,22 +25,27 @@ h4,
   padding-left: 0;
   padding-right: 0;
 }
+
 .HLLandingControl h4,
 .HLEngagement h3 {
   color: $brand-primary;
 }
+
 a {
-  color: $dark-gray;
+  color: $link-color;
   font-family: $font-family-base !important;
 }
+
 a:hover,
 a:focus {
-  color: $dark-gray;
-  text-decoration: underline;
+  color: $link-hover-color;
+  text-decoration: none;
 }
+
 .alert-warning {
   color: $brand-primary;
 }
+
 .hltags ul.tagit input[type="text"]::placeholder {
   color: $brand-primary;
 }
@@ -63,51 +71,18 @@ body {
   font-family: $font-family-base;
   font-weight: $font-weight-normal;
   font-size: $font-size-base;
-  line-height: $line-height-base;
-  color: $dark-gray;
+  line-height: $line-height-medium;
+  color: $body-color;
   background-color: $body-bg;
 }
 
-h2,
-.h2,
-.HLLandingControl h2,
-.HLLandingControl .heading h2,
-.community-members .panel-title {
-  text-transform: inherit;
-  padding: 0;
-  font-weight: 700;
-  font-size: $font-size-h2;
-  line-height: $line-height-h2;
-}
-h3.blogTitle {
-  font-weight: 700;
-  font-size: $font-size-h3;
-  line-height: $line-height-h3;
-}
-.home h2 span,
-.community-home h2 span,
-.community-members .panel-title span {
-  position: relative;
-  display: inline-block;
-  line-height: 32px;
-}
-.home h2 span::after,
-.community-home h2 span::after,
-.community-members .panel-title span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-}
 h3,
 .h3,
 .HLLandingControl h3 a {
   font-size: $font-size-h3;
   line-height: $line-height-h3;
 }
+
 h4,
 .h4 {
   font-weight: 500;
@@ -116,6 +91,7 @@ h4,
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 .interior {
   #MainCopy_ContentWrapper {
     padding-top: 40px;
@@ -130,79 +106,74 @@ h1,
   font-size: $font-size-h1;
   font-weight: $line-height-h1;
 }
+
 h2,
 .h3 {
   font-size: $font-size-h2;
   font-weight: $line-height-h2;
 }
+
 h3,
 .h3 {
   font-size: $font-size-h3;
   font-weight: $line-height-h3;
 }
+
 h4,
 .h4 {
   font-size: $font-size-h4;
   font-weight: $line-height-h4;
 }
+
 h5,
 .h5 {
   font-size: $font-size-h5;
   font-weight: $line-height-h5;
 }
+
 h6,
 .h6 {
   font-size: $font-size-h6;
   font-weight: $line-height-h6;
 }
 
-.navbar-default .navbar-nav > .dropdown > a .caret::before,
-.nav-tabs > li > a .caret::before,
-.caret::before {
-  font-family: "Font Awesome 5 Pro";
-  content: "\f107";
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1;
-}
-.caret.caret {
-  border-color: transparent !important;
-  position: relative !important;
-  top: 0 !important;
-  right: 5px !important;
-  text-align: center;
-  &:before {
-    position: absolute;
-    top: -12px;
-    left: 0;
-  }
-}
+// .navbar-default .navbar-nav>.dropdown>a .caret::before,
+// .nav-tabs>li>a .caret::before,
+// .caret::before {
+//   font-family: "Font Awesome 5 Pro";
+//   content: "\f107";
+//   font-weight: 300;
+//   font-size: 20px;
+//   line-height: 1;
+// }
 
-.CommunityManagementGear .dropdown-menu.pull-right {
-  width: 590px;
-  @include media(tablet-and-down) {
-    width: 340px;
-  }
-  .CommunityManagementGearStatusPaddingL {
-    .CommunityManagementGearTopMargin {
-      @include media(tablet-and-down) {
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
-}
-.home #MPOuter {
-  padding-top: 8px;
-}
-.interior {
-  #MainCopy_ContentWrapper {
-    @include media(tablet-and-down) {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-}
-.row.has-error {
-  margin: 0 0 10px 0;
-}
+// .caret.caret {
+//   border-color: transparent !important;
+//   position: relative !important;
+//   top: 0 !important;
+//   right: 5px !important;
+//   text-align: center;
+
+//   &:before {
+//     position: absolute;
+//     top: -12px;
+//     left: 0;
+//   }
+// }
+
+// .CommunityManagementGear .dropdown-menu.pull-right {
+//   width: 590px;
+
+//   @include media(tablet-and-down) {
+//     width: 340px;
+//   }
+
+//   .CommunityManagementGearStatusPaddingL {
+//     .CommunityManagementGearTopMargin {
+//       @include media(tablet-and-down) {
+//         display: block;
+//         margin: 0 auto;
+//       }
+//     }
+//   }
+// }
