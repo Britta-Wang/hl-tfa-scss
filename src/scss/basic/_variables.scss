@@ -6,10 +6,14 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
+$primary-blue: #0085C8 !default;
+$secondary-blue: #4BC8F5 !default;
+$tertiary-pink: #E46D9B !default;
+$tertiary-orange: #F8B14A !default;
 
 $gray-base: #000 !default;
 $gray-darker: lighten($gray-base, 13.5%) !default; // #222
-$gray-dark: lighten($gray-base, 20%) !default; // #333
+$gray-dark: #222a34 !default; // #333
 $gray: lighten($gray-base, 33.5%) !default; // #555
 $gray-light: lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
@@ -29,7 +33,7 @@ $black: #000 !default;
 $gray-border: #ccc;
 
 $brand-primary: #0085C8 !default;
-$brand-primary-hover: #062f6d !default;
+$brand-primary-hover: $secondary-blue !default;
 $brand-secondary: #005EB9 !default;
 $brand-secondary-hover: #0051A0 !default;
 $brand-success: #5cb85c !default;
@@ -49,13 +53,13 @@ $red: #ff0000 !default;
 
 $warm-gray: #d7d2cb !default;
 $gray: #dfdbd5 !default;
-$light-gray: #ebe9e5 !default;
-$dark-gray: #333f48 !default;
+$light-gray: #efefef !default;
+$dark-gray: #222a34 !default;
 $light-grey-highlight: #f3f3f3 !default;
 
 $body-color: $dark-gray !default;
 $text-muted: $gray-600 !default;
-$link-color: $brand-primary !default;
+$link-color: #2C489E !default;
 $body-bg: $light-grey-highlight !default;
 $body-font-size: 14px !default;
 $body-line-height: 1.71428571 !default;
@@ -148,29 +152,21 @@ $font-family-sans-serif: "Open Sans",
 $font-family-base: $font-family-sans-serif !default;
 
 $font-size-base: 16px !default; // Assumes the browser default, typically `16px`
-$font-size-xs: (
-  $font-size-base * (10 / $font-size-base)) + px !default;
+$font-size-xs: 10px !default;
 
-$font-size-sm: (
-  $font-size-base * (12 / $font-size-base)) + px !default;
+$font-size-sm: 12px !default;
 
-$font-size-md: (
-  $font-size-base * (14 / $font-size-base)) + px !default;
+$font-size-md: 14px !default;
 
-$font-size-lg: (
-  $font-size-base * (16 / $font-size-base)) + px !default;
+$font-size-lg: 16px !default;
 
-$font-size-xlg: (
-  $font-size-base * (18 / $font-size-base)) + px !default;
+$font-size-xlg: 18px !default;
 
-$font-size-xxlg: (
-  $font-size-base * (20 / $font-size-base)) + px !default;
+$font-size-xxlg: 20px !default;
 
-$font-size-xxxlg: (
-  $font-size-base * (24 / $font-size-base)) + px !default;
+$font-size-xxxlg: 24px !default;
 
-$font-size-xxxxlg: (
-  $font-size-base * (30 / $font-size-base)) + px !default;
+$font-size-xxxxlg: 30px !default;
 
 $font-size-h1: 36px !default;
 $font-size-h2: 30px !default;
@@ -290,9 +286,9 @@ $btn-border-radius: $border-radius-base !default;
 $btn-line-height: 22px !default;
 $btn-boxshadow: 0px 1px 4px rgba(4, 30, 66, 0.25) !default;
 
-$btn-primary-bg-color: $brand-primary !default;
-$btn-primary-bg-color-hover: $brand-primary-hover !default;
-$btn-primary-border-color: $brand-primary !default;
+$btn-primary-bg-color: #2C489E !default;
+$btn-primary-bg-color-hover: lighten($btn-primary-bg-color, 13.5%) !default;
+$btn-primary-border-color: #2C489E !default;
 $btn-primary-color: $white !default;
 
 $btn-secondary-bg-color: $brand-secondary !default;

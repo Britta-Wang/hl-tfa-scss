@@ -1,55 +1,4 @@
 /****** basics ******/
-h2,
-.h2 {
-  color: $brand-primary;
-}
-
-h2 span::after,
-.panel-title span::after {
-  border-bottom-color: $brand-primary;
-}
-
-h3,
-.h3,
-.HLLandingControl h3 a {
-  color: $brand-primary;
-}
-
-h4,
-.h4 {
-  color: $brand-primary;
-}
-
-.HLLandingControl h4,
-.col-md-12[class*="section"] {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.HLLandingControl h4,
-.HLEngagement h3 {
-  color: $brand-primary;
-}
-
-a {
-  color: $link-color;
-  font-family: $font-family-base !important;
-}
-
-a:hover,
-a:focus {
-  color: $link-hover-color;
-  text-decoration: none;
-}
-
-.alert-warning {
-  color: $brand-primary;
-}
-
-.hltags ul.tagit input[type="text"]::placeholder {
-  color: $brand-primary;
-}
-
 h1,
 h2,
 h3,
@@ -63,7 +12,6 @@ h6,
 .h5,
 .h6 {
   font-weight: 700;
-  color: $brand-primary;
   font-family: $font-family-base !important;
 }
 
@@ -72,8 +20,6 @@ body {
   font-weight: $font-weight-normal;
   font-size: $font-size-base;
   line-height: $line-height-medium;
-  color: $body-color;
-  background-color: $body-bg;
 }
 
 h3,
