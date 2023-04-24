@@ -6,10 +6,14 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
+$primary-blue: #0085C8 !default;
+$secondary-blue: #4BC8F5 !default;
+$tertiary-pink: #E46D9B !default;
+$tertiary-orange: #F8B14A !default;
 
 $gray-base: #000 !default;
 $gray-darker: lighten($gray-base, 13.5%) !default; // #222
-$gray-dark: lighten($gray-base, 20%) !default; // #333
+$gray-dark: #222a34 !default; // #333
 $gray: lighten($gray-base, 33.5%) !default; // #555
 $gray-light: lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
@@ -28,8 +32,8 @@ $gray-900: #1e1e1e !default;
 $black: #000 !default;
 $gray-border: #ccc;
 
-$brand-primary: #041e42 !default;
-$brand-primary-hover: #062f6d !default;
+$brand-primary: #0085C8 !default;
+$brand-primary-hover: $secondary-blue !default;
 $brand-secondary: #005EB9 !default;
 $brand-secondary-hover: #0051A0 !default;
 $brand-success: #5cb85c !default;
@@ -49,13 +53,13 @@ $red: #ff0000 !default;
 
 $warm-gray: #d7d2cb !default;
 $gray: #dfdbd5 !default;
-$light-gray: #ebe9e5 !default;
-$dark-gray: #333f48 !default;
-$light-grey-highlight: #f5f4f2 !default;
+$light-gray: #efefef !default;
+$dark-gray: #222a34 !default;
+$light-grey-highlight: #f3f3f3 !default;
 
 $body-color: $dark-gray !default;
 $text-muted: $gray-600 !default;
-$link-color: $brand-primary !default;
+$link-color: #2C489E !default;
 $body-bg: $light-grey-highlight !default;
 $body-font-size: 14px !default;
 $body-line-height: 1.71428571 !default;
@@ -68,26 +72,45 @@ $high-shadows: 0 2px 4px 0 rgba(4, 30, 66, 0.15) !default;
 $spacer: 16px !default;
 
 $spacer-0: 0 !default; // 0px
-$spacer-1: ($spacer * 0.25) !default; // 4px
-$spacer-2: ($spacer * 0.5) !default; // 8px
-$spacer-3: ($spacer * 0.75) !default; // 12px
-$spacer-4: ($spacer * 1) !default; // 16px
-$spacer-5: ($spacer * 1.5) !default; // 24px
-$spacer-6: ($spacer * 1.75) !default; // 28px
-$spacer-7: ($spacer * 2) !default; // 32px
-$spacer-8: ($spacer * 2.25) !default; // 36px
-$spacer-9: ($spacer * 2.5) !default; // 40px
+$spacer-1: (
+  $spacer * 0.25) !default; // 4px
+$spacer-2: (
+  $spacer * 0.5) !default; // 8px
+$spacer-3: (
+  $spacer * 0.75) !default; // 12px
+$spacer-4: (
+  $spacer * 1) !default; // 16px
+$spacer-5: (
+  $spacer * 1.5) !default; // 24px
+$spacer-6: (
+  $spacer * 1.75) !default; // 28px
+$spacer-7: (
+  $spacer * 2) !default; // 32px
+$spacer-8: (
+  $spacer * 2.25) !default; // 36px
+$spacer-9: (
+  $spacer * 2.5) !default; // 40px
 
-$spacer-10: ($spacer * 4) !default; // 64px
-$spacer-11: ($spacer * 5) !default; // 80px
-$spacer-12: ($spacer * 6) !default; // 96px
-$spacer-13: ($spacer * 7) !default; // 112px
-$spacer-14: ($spacer * 8) !default; // 128px
-$spacer-15: ($spacer * 9) !default; // 144px
-$spacer-16: ($spacer * 10) !default; // 160px
-$spacer-17: ($spacer * 11) !default; // 176px
-$spacer-18: ($spacer * 12) !default; // 192px
-$spacer-19: ($spacer * 13) !default; // 208px
+$spacer-10: (
+  $spacer * 4) !default; // 64px
+$spacer-11: (
+  $spacer * 5) !default; // 80px
+$spacer-12: (
+  $spacer * 6) !default; // 96px
+$spacer-13: (
+  $spacer * 7) !default; // 112px
+$spacer-14: (
+  $spacer * 8) !default; // 128px
+$spacer-15: (
+  $spacer * 9) !default; // 144px
+$spacer-16: (
+  $spacer * 10) !default; // 160px
+$spacer-17: (
+  $spacer * 11) !default; // 176px
+$spacer-18: (
+  $spacer * 12) !default; // 192px
+$spacer-19: (
+  $spacer * 13) !default; // 208px
 
 // Module
 $module-bg: $white;
@@ -113,32 +136,42 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"  !default;
-$font-family-base: $font-family-sans-serif  !default;
+$font-family-sans-serif: "Open Sans",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Noto Sans",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+$font-family-base: $font-family-sans-serif !default;
 
-$font-size-base: 14px !default; // Assumes the browser default, typically `16px`
-$font-size-xs: ($font-size-base * (10 / $font-size-base)) + px !default;
+$font-size-base: 16px !default; // Assumes the browser default, typically `16px`
+$font-size-xs: 10px !default;
 
-$font-size-sm: ($font-size-base * (12 / $font-size-base)) + px !default;
+$font-size-sm: 12px !default;
 
-$font-size-md: ($font-size-base * (14 / $font-size-base)) + px !default;
+$font-size-md: 14px !default;
 
-$font-size-lg: ($font-size-base * (16 / $font-size-base)) + px !default;
+$font-size-lg: 16px !default;
 
-$font-size-xlg: ($font-size-base * (18 / $font-size-base)) + px !default;
+$font-size-xlg: 18px !default;
 
-$font-size-xxlg: ($font-size-base * (20 / $font-size-base)) + px !default;
+$font-size-xxlg: 20px !default;
 
-$font-size-xxxlg: ($font-size-base * (24 / $font-size-base)) + px !default;
+$font-size-xxxlg: 24px !default;
 
-$font-size-xxxxlg: ($font-size-base * (30 / $font-size-base)) + px !default;
+$font-size-xxxxlg: 30px !default;
 
-$font-size-h1: 30px !default;
-$font-size-h2: 24px !default;
+$font-size-h1: 36px !default;
+$font-size-h2: 30px !default;
 $font-size-h3: 20px !default;
-$font-size-h4: 18px !default;
+$font-size-h4: 16px !default;
 $font-size-h5: 16px !default;
 $font-size-h6: 14px !default;
 
@@ -148,11 +181,11 @@ $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
 $font-weight-base: $font-weight-normal !default;
 
-$line-height-h1: 41px !default;
-$line-height-h2: 33px !default;
+$line-height-h1: 43px !default;
+$line-height-h2: 36px !default;
 $line-height-h3: 24px !default;
-$line-height-h4: 24px !default;
-$line-height-h5: 22px !default;
+$line-height-h4: 20px !default;
+$line-height-h5: 20px !default;
 $line-height-h6: 24px !default;
 //line-height
 $line-height-xxxl: 1.3333333333 !default;
@@ -253,9 +286,9 @@ $btn-border-radius: $border-radius-base !default;
 $btn-line-height: 22px !default;
 $btn-boxshadow: 0px 1px 4px rgba(4, 30, 66, 0.25) !default;
 
-$btn-primary-bg-color: $brand-primary !default;
-$btn-primary-bg-color-hover: $brand-primary-hover !default;
-$btn-primary-border-color: $brand-primary !default;
+$btn-primary-bg-color: #2C489E !default;
+$btn-primary-bg-color-hover: lighten($btn-primary-bg-color, 13.5%) !default;
+$btn-primary-border-color: #2C489E !default;
 $btn-primary-color: $white !default;
 
 $btn-secondary-bg-color: $brand-secondary !default;
@@ -292,16 +325,23 @@ $screen-lg-min: $screen-lg !default; // 1200
 $screen-xlg-min: $screen-xlg !default; // 1600
 $screen-xxlg-min: $screen-xxlg !default; // 1900
 
-$screen-little-max: ($screen-tiny-min - 1) !default; //359
-$screen-tiny-max: ($screen-xs-min - 1) !default; //479
-$screen-xs-max: ($screen-sm-min - 1) !default; //767
-$screen-sm-max: ($screen-md-min - 1) !default; //991
-$screen-md-max: ($screen-lg-min - 1) !default; //1199
-$screen-lg-max: ($screen-xlg-min - 1) !default; //1599
-$screen-xlg-max: ($screen-xxlg-min - 1) !default; //1899
+$screen-little-max: (
+  $screen-tiny-min - 1) !default; //359
+$screen-tiny-max: (
+  $screen-xs-min - 1) !default; //479
+$screen-xs-max: (
+  $screen-sm-min - 1) !default; //767
+$screen-sm-max: (
+  $screen-md-min - 1) !default; //991
+$screen-md-max: (
+  $screen-lg-min - 1) !default; //1199
+$screen-lg-max: (
+  $screen-xlg-min - 1) !default; //1599
+$screen-xlg-max: (
+  $screen-xxlg-min - 1) !default; //1899
 
 //height
-$screen-xlg-min-h: 769px  !default;
+$screen-xlg-min-h: 769px !default;
 $screen-xxlg-min-h: 1081px !default;
 $screen-xxxlg-min-h: 1441px !default;
 
@@ -314,18 +354,12 @@ $breakpoints: (
   large-and-down: "(max-width: #{$screen-md-max})",
   xlarge-and-down: "(max-width: #{$screen-lg-max})",
   xxlarge-and-down: "(max-width: #{$screen-xlg-max})",
-  tiny-to-phone:
-    "(min-width: #{$screen-tiny-min}) and (max-width: #{$screen-tiny-max})",
-  phone-to-tablet:
-    "(min-width: #{$screen-xs-min}) and (max-width: #{$screen-xs-max})",
-  tablet-to-desktop:
-    "(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})",
-  desktop-to-large:
-    "(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})",
-  large-to-xlarge:
-    "(min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max})",
-  xlarge-to-xxlarge:
-    "(min-width: #{$screen-xlg-min}) and (max-width: #{$screen-xlg-max})",
+  tiny-to-phone: "(min-width: #{$screen-tiny-min}) and (max-width: #{$screen-tiny-max})",
+  phone-to-tablet: "(min-width: #{$screen-xs-min}) and (max-width: #{$screen-xs-max})",
+  tablet-to-desktop: "(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})",
+  desktop-to-large: "(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})",
+  large-to-xlarge: "(min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max})",
+  xlarge-to-xxlarge: "(min-width: #{$screen-xlg-min}) and (max-width: #{$screen-xlg-max})",
   phone-and-up: "(min-width: #{$screen-xs-min})",
   tablet-and-up: "(min-width: #{$screen-sm-min})",
   desktop-and-up: "(min-width: #{$screen-md-min})",
