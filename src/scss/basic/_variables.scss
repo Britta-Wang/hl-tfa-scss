@@ -137,7 +137,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: "Open Sans",
+$font-family-sans-serif: "Source Sans Pro",
   -apple-system,
   BlinkMacSystemFont,
   "Segoe UI",
@@ -151,6 +151,20 @@ $font-family-sans-serif: "Open Sans",
   "Segoe UI Symbol",
   "Noto Color Emoji" !default;
 $font-family-base: $font-family-sans-serif !default;
+$font-family-advanced: "DIN Pro",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Noto Sans",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+$fa-font-display: "swap" !default;
 
 $font-size-base: 16px !default; // Assumes the browser default, typically `16px`
 $font-size-xs: 10px !default;

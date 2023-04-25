@@ -1,8 +1,8 @@
 div[id*="BottomLink"] a.btn,
 div[id*="More"] a.btn,
 .home .HLRecentBlogs a[id*="BlogList_More"].btn,
-.top-tile a em {
-    padding: 8px 12px;
+.top-tile a em,
+a[id*="CommunityList_join"] {
     border: none;
     background: $btn-primary-bg-color;
     color: $btn-primary-color;
@@ -10,5 +10,10 @@ div[id*="More"] a.btn,
     line-height: 20px;
     text-decoration: none;
     text-transform: none;
+    border-radius: 20px;
+}
+
+.bootstrap-4 .btn.btn {
+    padding: 8px 16px;
     border-radius: 20px;
 }
