@@ -1,0 +1,19 @@
+.HLMyDocuments {
+    .Content {
+        >.row {
+            ul {
+                li {
+                    padding: 0;
+                    border: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.community-home {
+    .HLMyDocuments {
+        margin-top: $spacer-10;
+    }
+}

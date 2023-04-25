@@ -5,6 +5,11 @@
                 .col-md-12 {
                     margin-top: $spacer-2;
                     text-align: center;
+
+                    .btn-default {
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
                 }
             }
         }
