@@ -7,7 +7,11 @@
 }
 
 #MPOuterFooter {
+    padding-bottom: 65px;
     background-color: $footer-layout-bg;
+    @include media(tablet-and-down) {
+        padding-bottom: 30px;
+    }
 
     &:after {
         display: none;
@@ -31,9 +35,19 @@
         line-height: 20px;
     }
 
-    .section1 img {
-        max-width: 139px;
-        margin-bottom: $spacer-4;
+    .section1 {
+        .footer-logo {
+            .HtmlFooter {
+                @include media(desktop-and-down) {
+                    padding: 0;
+                }
+            }
+        }
+
+        img {
+            max-width: 139px;
+            margin-bottom: $spacer-4;
+        }
     }
 
     .section2,
@@ -67,6 +81,10 @@
             display: inline-block;
             width: 19%;
             font-size: $font-size-xlg;
+
+            @include media(tablet-and-down) {
+                width: 50px;
+            }
         }
     }
 }
@@ -81,19 +99,38 @@
 
 #MPFooterLink {
     position: absolute;
-    bottom: 16px;
+    bottom: 66px;
     left: calc(50% - 330px);
     z-index: 2;
+    @include media(tablet-and-down) {
+        margin-top: 15px;
+    }
+
     @media (max-width: 1260px) {
         left: 300px;
     }
+
+    @include media(tablet-and-down) {
+        position: static;
+        text-align: left;
+    }
+
     a {
         font-size: $font-size-md;
         color: $secondary-blue;
         font-weight: $font-weight-semibold;
         line-height: 20px;
     }
+
+    #MPFooterLinkContent {
+        @include media(tablet-and-down) {
+            padding-left: 16px;
+            text-align: left;
+        }
+    }
 }
+
+
 
 #MPFooterLinkContent {
     text-align: left;
@@ -104,12 +141,28 @@
         .col-md-3 {
             width: 20%;
 
+            @include media(desktop-and-down) {
+                width: 33.333%;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            @include media(tablet-and-down) {
+                width: 100%;
+                display: block;
+            }
+
             .inline-content-html-editor-container {
                 display: none;
             }
 
             &.section1 {
                 width: 40%;
+
+                @include media(desktop-and-down) {
+                    width: 100%;
+                    display: block;
+                }
             }
         }
     }

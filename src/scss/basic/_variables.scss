@@ -32,6 +32,8 @@ $black: #000 !default;
 
 $gray-border: #ccc;
 
+$primary: #2C489E !default;
+$secondary: #EFEFEF !default;
 $brand-primary: #0085C8 !default;
 $brand-primary-hover: $secondary-blue !default;
 $brand-secondary: #005EB9 !default;
@@ -285,14 +287,14 @@ $btn-border-radius: $border-radius-base !default;
 $btn-line-height: 22px !default;
 $btn-boxshadow: 0px 1px 4px rgba(4, 30, 66, 0.25) !default;
 
-$btn-primary-bg-color: #2C489E !default;
+$btn-primary-bg-color: $primary !default;
 $btn-primary-bg-color-hover: lighten($btn-primary-bg-color, 13.5%) !default;
-$btn-primary-border-color: #2C489E !default;
+$btn-primary-border-color: $primary !default;
 $btn-primary-color: $white !default;
 
-$btn-secondary-bg-color: $brand-secondary !default;
-$btn-secondary-bg-color-hover: $brand-secondary-hover !default;
-$btn-primary-border-color: $brand-secondary !default;
+$btn-secondary-bg-color: $secondary !default;
+$btn-secondary-bg-color-hover: lighten($btn-secondary-bg-color, 13.5%) !default;
+$btn-primary-border-color: $secondary !default;
 $btn-secondary-color: $white !default;
 
 
