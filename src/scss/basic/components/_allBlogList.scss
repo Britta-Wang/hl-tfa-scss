@@ -90,6 +90,15 @@
                     line-height: 16px;
                     border-radius: 3px;
                     background-color: $secondary;
+                    &:after {
+                        content: "\f105";
+                        font-family: "Font Awesome 5 Pro";
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: $spacer-2;
+                        font-size: $font-size-xlg;
+                        font-weight: $font-weight-light;
+                    }
                 }
             }
         }

@@ -1,0 +1,12 @@
+.HLDiscussions {
+    .Content {
+        >.row {
+            &:nth-last-of-type(1) {
+                .col-md-12 {
+                    margin-top: $spacer-2;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
