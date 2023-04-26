@@ -1,6 +1,6 @@
 // homepage tab
 
-#InteriorPageTitle {
+body.ribbit.interior :not(.no-theme) #InteriorPageTitle {
     background: $gray-dark;
 
     svg {
@@ -8,7 +8,7 @@
     }
     
     #PageTitleH1 {
-        color: $secondary-blue;
+        color: $secondary-blue !important;
         font-size: $font-size-h1;
         font-weight: $font-weight-bold;
     }
@@ -25,7 +25,11 @@
 
         li {
             border: 0;
-    
+            
+            &:hover {
+                border-bottom: 4px solid $secondary-blue;
+            }
+
             a {
             font-size: $body-font-size;
             font-weight: $font-weight-semibold;
@@ -46,7 +50,7 @@ body.ribbit :not(.no-theme) .community-tabs-container #CommunityTabsContainer.na
     border-bottom: 4px solid $secondary-blue;
 }
 
-.community-home .community-tabs-container .community-tabs-actions {
+body.community-pages .community-home .community-tabs-container .community-tabs-actions {
     display: none;
 }
 
@@ -80,7 +84,7 @@ body.ribbit :not(.no-theme) .community-tabs-container #CommunityTabsContainer.na
         } 
         .single-card-info {
             .card-description {
-                color: rgba(60,68,83,0.9);
+                color: rgba(60,68,83,0.9) !important;
                 font-family: $font-family-base;
                 font-size: $font-size-base;
                 text-align: left;
@@ -93,8 +97,8 @@ body.ribbit :not(.no-theme) .community-tabs-container #CommunityTabsContainer.na
                     height: 40px;
                     width: 100%;
                     border-radius: 3px;
-                    background-color: $secondary;
-                    color: #3C4453;
+                    background-color: $secondary !important;
+                    color: #3C4453 !important;
                     font-size: $body-font-size;
                     font-weight: $font-weight-semibold;
 
