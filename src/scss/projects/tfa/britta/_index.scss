@@ -1,0 +1,180 @@
+// homepage tab
+
+#InteriorPageTitle {
+    background: $gray-dark;
+
+    svg {
+        display: none;
+    }
+    
+    #PageTitleH1 {
+        color: $secondary-blue;
+        font-size: $font-size-h1;
+        font-weight: $font-weight-bold;
+    }
+}
+
+.community-home .ContentUserControl.community-tabs-container-outer {
+    background: $gray-dark;
+
+    .community-tabs-container #CommunityTabsContainer.nav.nav-tabs {
+
+        .dropdown-menu {
+            background: $gray-dark;
+        }
+
+        li {
+            border: 0;
+    
+            a {
+            font-size: $body-font-size;
+            font-weight: $font-weight-semibold;
+            color: $white;
+            font-family: $font-family-base;
+    
+                .badge {
+                    border-radius: 4px;
+                    background-color: #FA383E;
+                    box-shadow: 0 3px 24px 0 rgba(131,135,145,0.16);
+                }
+            }
+        }
+    }
+}
+
+body.ribbit :not(.no-theme) .community-tabs-container #CommunityTabsContainer.nav.nav-tabs li.active-tab, body.ribbit .community-tabs-container #CommunityTabsContainer.nav.nav-tabs li:hover, body.ribbit .community-tabs-container #CommunityTabsContainer.nav.nav-tabs li:focus {
+    border-bottom: 4px solid $secondary-blue;
+}
+
+.community-home .community-tabs-container .community-tabs-actions {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+// feature cards
+
+.community-pages .community-home .featured-card {
+    .card-edit {
+        display: none;
+    }
+    .featured-card-single.card-layout-split {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .featured-card-single.card-layout-split {
+        .featured-card-image {
+            min-height: 122px;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            border-radius: 32px;
+            background-color: rgba(239,239,239,0.24);
+        } 
+        .single-card-info {
+            .card-description {
+                color: rgba(60,68,83,0.9);
+                font-family: $font-family-base;
+                font-size: $font-size-base;
+                text-align: left;
+            }
+            .spaced-row.spaced-row-2 {
+                margin: 0;
+
+                .btn {
+                    border: none;
+                    height: 40px;
+                    width: 100%;
+                    border-radius: 3px;
+                    background-color: $secondary;
+                    color: #3C4453;
+                    font-size: $body-font-size;
+                    font-weight: $font-weight-semibold;
+
+                    &::after {
+                        content: "";
+                        font-family: "Font Awesome 5 Pro";
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: $spacer-2;
+                        font-size: $font-size-xlg;
+                        font-weight: $font-weight-light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// most active members
+.community-pages .community-home .ContentUserControl .HLLandingControl.HLEngagement {
+    margin-top: $spacer-9;
+    max-width: 400px;
+
+    .heading h2 {
+        color: $gray-dark;
+        font-family: $font-family-base;
+        font-size: $font-size-h3;
+        font-weight: $font-weight-semibold;
+        margin-bottom: $spacer-7;
+    }
+
+    .Content ul.display-vertical li.active-user-row {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .title-row {
+            display: flex;
+
+            .col-md-9 a {
+                color: $gray-dark;
+                font-family: $font-family-base;
+                font-size: $font-size-base;
+                font-weight: $font-weight-semibold;
+                text-decoration: none;
+            }
+
+            .ByLine {
+                color: #808080;
+                font-family: $font-family-base;
+                font-size: $font-size-sm;
+            }
+        }
+
+        .content-row {
+            .label-success {
+                border-radius: 3px;
+                background-color: $brand-primary;
+                color: $white;
+                font-size: $font-size-sm;
+                font-weight: $font-weight-normal;
+                padding-right: $spacer-2;
+                padding-left: $spacer-2;
+            }
+
+            @media (min-width: 992px) {
+                .col-md-9 {
+                    width: unset;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
