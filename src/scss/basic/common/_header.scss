@@ -1,0 +1,136 @@
+body.ribbit #LogoNavPlaceholder img {
+	height: 48px !important;
+}
+.row.traditional-nav#NAV {
+	#MPButtonBar {
+		padding-left: $spacer-2;
+		padding-right: $spacer-2;
+		.navbar {
+			padding: $spacer-1 * 3.75 $spacer-2;
+		}
+	}
+	.collapse >.row >.col-md-12 {
+		@media (max-width: $screen-sm-max) {
+			display: block !important;
+		}
+		#searchColumn {
+			@media (max-width: $screen-sm-max) {
+				position: relative;
+				width: 100%;
+			}
+			.input-group {
+				width: 100%;
+			}
+			#MPSearchBlock {
+				padding-top: 0;
+				@media (max-width: $screen-sm-max) {
+					width: 100%;
+				}
+				#SearchControl_SearchInputs .input-group .form-control:first-child#SearchControl_SearchTerm {
+					height: 34px;
+					@media (min-width: $screen-md-min) {
+						max-width: 80px;
+					}
+					@media (min-width: $screen-lg-min) {
+						max-width: 110px;
+					}
+					@media (min-width: $screen-xlg-min) {
+						max-width: 215px;
+						&:focus {
+							max-width: 215px;
+						}
+					}
+					@media (max-width: $screen-sm-max) {
+						max-width: 100%;
+					}
+				}
+			}
+			#RibbitWelcome {
+				.ProfileDropDown,
+				.Login {
+					margin-left: $spacer-5;
+					.btn {
+						border-radius: 22px;
+						font-weight: $font-weight-semibold;
+						line-height: 20px;
+					}
+				}
+			}
+			#CreateBtnWrapper {
+				margin-left: $spacer-5;
+				.btn {
+					border-radius: 22px;
+					font-weight: $font-weight-semibold;
+					line-height: 20px;
+					padding: $spacer-2 $spacer-1 * 2.5;
+				}
+			}
+
+		}
+		ul.navbar-nav {
+			@media (max-width: $screen-sm-max) {
+				width: 100%;
+				min-height: unset;
+			}
+			li {
+				a {
+					span {
+						//color: #222A34;
+						font-size: $font-size-md;
+						//font-weight: 600;
+						//letter-spacing: 0;
+						//line-height: 18px;
+						&::before {
+							font-family: "Font Awesome 5 Pro";
+							margin-right: $spacer-1;
+							font-size: $btn-font-size;
+						}
+					}
+					.caret {
+						display: none;
+					}
+				}
+				a[href="/home"] span {
+					&::before {
+						content: "\f015";
+						font-weight: $font-weight-normal;
+					}
+				}
+				a[href="/communities"] span {
+					&::before {
+						content: "\f0c0";
+						font-weight: $font-weight-normal;
+					}
+				}
+				a[href="/network"] span {
+					&::before {
+						content: "\f2b9";
+						font-weight: $font-weight-normal;
+					}
+				}
+				a[href="/events"] span {
+					&::before {
+						content: "\f133";
+						font-weight: $font-weight-normal;
+					}
+				}
+				a[href="/browse"] span {
+					&::before {
+						content: "\f14e";
+						font-weight: $font-weight-normal;
+					}
+				}
+			}
+		}
+	}
+	#searchColumn #MPSearchBlock {
+		@media (max-width: $screen-sm-max) {
+			border-top: 0;
+		}
+		#SearchControl_SearchInputs .input-group .form-control:first-child#SearchControl_SearchTerm {
+			@media (max-width: $screen-xs-max) {
+				padding-left: $spacer-7;
+			}
+		}
+	}
+}
