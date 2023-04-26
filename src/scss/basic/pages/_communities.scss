@@ -7,6 +7,13 @@
         }
         div[id*="CommunityFilter"] {
             margin-bottom: 0;
+            select[id*="CommunityTypeDropDown"] {
+                background-image: url("../../../images/angle-down-light.svg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: 10px;
+                padding-left: 20px;
+            }
             .form-group {
                 margin-left: 16px;
                 @include media(desktop-and-down) {
@@ -38,6 +45,8 @@
     }
 }
 .community-list {
+    display: flex;
+    align-items: center;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 24px 32px;
@@ -63,6 +72,20 @@
                     color: #808080;
                 }
             }
+            p[id*="pDescription"] {
+                color: rgba(60,68,83,0.9);
+                font-size: $font-size-lg;
+                line-height: 24px;
+            }
+            p[id*="pStatLastJoined"] {
+                margin-top: 15px;
+                span[id*="imgIsMember"] {
+                    margin-right: 8px;
+                }
+                span[id*="lblLastUpdated"] {
+                    margin-left: -8px;
+                }
+            }
         }
     }
     >.col-md-5 {
@@ -80,10 +103,9 @@
                 }
                 &.row-bottom-margin {
                     width: 25%;
-                    margin-bottom: 12px;
+                    margin-top: 10px;
                     margin-left: 0;
                     margin-right: 0;
-                    display: inline-block;
                     text-align: center;
                     float: left;
                     .col-md-12 {
