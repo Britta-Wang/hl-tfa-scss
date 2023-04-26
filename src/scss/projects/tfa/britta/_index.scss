@@ -14,8 +14,9 @@ body.ribbit.interior :not(.no-theme) #InteriorPageTitle {
     }
 }
 
-.community-home .ContentUserControl.community-tabs-container-outer {
+body.ribbit .community-home .ContentUserControl.community-tabs-container-outer {
     background: $gray-dark;
+    margin-top: -42px;
 
     .community-tabs-container #CommunityTabsContainer.nav.nav-tabs {
 
@@ -65,9 +66,6 @@ body.community-pages .community-home .community-tabs-container .community-tabs-a
 // feature cards
 
 .community-pages .community-home .featured-card {
-    .card-edit {
-        display: none;
-    }
     .featured-card-single.card-layout-split {
         border: 0;
         border-radius: 0;
@@ -83,6 +81,9 @@ body.community-pages .community-home .community-tabs-container .community-tabs-a
             background-color: rgba(239,239,239,0.24);
         } 
         .single-card-info {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+
             .card-description {
                 color: rgba(60,68,83,0.9) !important;
                 font-family: $font-family-base;
